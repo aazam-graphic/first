@@ -1,0 +1,7 @@
+{
+  "Version":"2012-10-17",
+  "Statement":[
+    {"Effect":"Allow","Action":["iot:Publish","iot:Subscribe"],"Resource":"arn:aws:iot:ap-south-1:660626815694:topic/azamcar/*"},
+    {"Effect":"Allow","Action":["iot:GetThingShadow"],"Resource":"arn:aws:iot:ap-south-1:660626815694:thing/azam-car"}
+  ]
+}

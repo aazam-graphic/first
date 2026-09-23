@@ -1,0 +1,8 @@
+{
+  "Version": "2012-10-17",
+  "Statement": [
+    {"Effect":"Allow","Action":"iot:Connect","Resource":"arn:aws:iot:ap-south-1:660626815694:client/azam-car"},
+    {"Effect":"Allow","Action":"iot:Publish","Resource":["arn:aws:iot:ap-south-1:660626815694:topic/azamcar/resp/*","arn:aws:iot:ap-south-1:660626815694:topic/azamcar/event/*","arn:aws:iot:ap-south-1:660626815694:topic/azamcar/state/*","arn:aws:iot:ap-south-1:660626815694:topic/$aws/things/azam-car/shadow/update"]},
+    {"Effect":"Allow","Action":["iot:Subscribe","iot:Receive"],"Resource":"arn:aws:iot:ap-south-1:660626815694:topicfilter/azamcar/cmd/*"}
+  ]
+}

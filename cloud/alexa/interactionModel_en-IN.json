@@ -1,0 +1,279 @@
+{
+  "interactionModel": {
+    "languageModel": {
+      "invocationName": "azam car",
+      "intents": [
+        { "name": "AMAZON.CancelIntent", "samples": [] },
+        { "name": "AMAZON.HelpIntent", "samples": [] },
+        { "name": "AMAZON.StopIntent", "samples": [] },
+        { "name": "AMAZON.NavigateHomeIntent", "samples": [] },
+        {
+          "name": "CarStatusIntent",
+          "slots": [],
+          "samples": [
+            "for status", "car status", "what is the car status",
+            "how is the car", "full report",
+            "gaari ka status batao", "status batao", "gaari kaisi hai"
+          ]
+        },
+        {
+          "name": "ZoneQueryIntent",
+          "slots": [{ "name": "side", "type": "SIDE_TYPE" }],
+          "samples": [
+            "is the {side} side clear", "is {side} side safe",
+            "what is on the {side}", "check {side} side",
+            "{side} side kaisa hai", "{side} side clear hai"
+          ]
+        },
+        {
+          "name": "ModeQueryIntent",
+          "slots": [],
+          "samples": ["what mode it is in", "which mode", "mode batao", "kaunse mode me hai"]
+        },
+        {
+          "name": "MotionQueryIntent",
+          "slots": [],
+          "samples": ["is the car moving", "car move kar rahi hai", "gaari chal rahi hai"]
+        },
+        {
+          "name": "CalibrationQueryIntent",
+          "slots": [],
+          "samples": ["is gyro calibrated", "is motion sensor calibrated", "calibration status", "gyro calibrate hai"]
+        },
+        {
+          "name": "SensorHealthIntent",
+          "slots": [],
+          "samples": ["are all sensors working", "sensor health", "sensors ok hain", "sensor check karo"]
+        },
+        {
+          "name": "LinkQueryIntent",
+          "slots": [],
+          "samples": ["is controller connected", "controller link status", "controller connected hai"]
+        },
+        {
+          "name": "LastAlertIntent",
+          "slots": [],
+          "samples": ["what was the last alert", "last alert batao", "aakhri alert kya tha"]
+        },
+        {
+          "name": "DayReportIntent",
+          "slots": [],
+          "samples": ["for today's report", "today's report", "aaj ki report batao"]
+        },
+        {
+          "name": "MaintenanceIntent",
+          "slots": [],
+          "samples": ["what needs maintenance", "maintenance batao", "kya service chahiye"]
+        },
+        {
+          "name": "MemStatusIntent",
+          "slots": [],
+          "samples": ["for memory status", "memory status", "memory kitni hai"]
+        },
+        {
+          "name": "SessionQueryIntent",
+          "slots": [],
+          "samples": ["how long was the last drive", "last drive kitni lambi thi", "drive time batao"]
+        },
+        {
+          "name": "OpenScreenIntent",
+          "slots": [{ "name": "screen", "type": "SCREEN_TYPE" }],
+          "samples": [
+            "open the {screen}", "show {screen}", "show me {screen}",
+            "{screen} kholo", "{screen} dikhao"
+          ]
+        },
+        {
+          "name": "SetBrightnessIntent",
+          "slots": [{ "name": "pct", "type": "AMAZON.NUMBER" }],
+          "samples": ["set display brightness to {pct} percent", "display {pct} percent karo", "screen brightness {pct}"]
+        },
+        {
+          "name": "DisplayThemeIntent",
+          "slots": [{ "name": "theme", "type": "THEME_TYPE" }],
+          "samples": ["switch to {theme} display", "{theme} theme lagao", "display {theme} karo"]
+        },
+        {
+          "name": "SetVolumeIntent",
+          "slots": [{ "name": "pct", "type": "AMAZON.NUMBER" }],
+          "samples": ["set engine volume to {pct} percent", "volume {pct} karo", "awaaz {pct} percent"]
+        },
+        { "name": "MuteIntent", "slots": [], "samples": ["mute the car", "car mute karo", "awaaz band karo"] },
+        { "name": "UnmuteIntent", "slots": [], "samples": ["unmute the car", "car unmute karo", "awaaz chalu karo"] },
+        {
+          "name": "SetProfileIntent",
+          "slots": [{ "name": "profile", "type": "PROFILE_TYPE" }],
+          "samples": [
+            "activate {profile}", "enable {profile}", "switch to {profile}",
+            "{profile} on karo", "{profile} lagao"
+          ]
+        },
+        {
+          "name": "AutoModeIntent",
+          "slots": [{ "name": "state", "type": "ONOFF_TYPE" }],
+          "samples": ["enable auto mode", "auto mode {state} karo", "auto mode on karo"]
+        },
+        {
+          "name": "SetGearIntent",
+          "slots": [{ "name": "gear", "type": "AMAZON.NUMBER" }],
+          "samples": ["set gear {gear}", "gear {gear} lagao", "gear {gear} karo"]
+        },
+        {
+          "name": "CalibrateIntent",
+          "slots": [],
+          "samples": ["calibrate the motion sensor", "gyro calibrate karo", "calibration karo"]
+        },
+        {
+          "name": "StartGameIntent",
+          "slots": [{ "name": "game", "type": "AMAZON.NUMBER" }],
+          "samples": ["start the game", "start game {game}", "game shuru karo"]
+        },
+        {
+          "name": "SaveSettingsIntent",
+          "slots": [],
+          "samples": ["save current settings", "settings save karo", "save karo"]
+        },
+        {
+          "name": "MakeRuleIntent",
+          "slots": [{ "name": "ruleText", "type": "AMAZON.SearchQuery" }],
+          "samples": ["make a rule {ruleText}", "create a rule {ruleText}", "rule banao {ruleText}"]
+        },
+        {
+          "name": "ListRulesIntent",
+          "slots": [],
+          "samples": ["list my active rules", "rules batao", "kaunsi rules hain"]
+        },
+        {
+          "name": "EnableRuleIntent",
+          "slots": [{ "name": "id", "type": "AMAZON.NUMBER" }],
+          "samples": ["enable rule {id}", "rule {id} on karo"]
+        },
+        {
+          "name": "DisableRuleIntent",
+          "slots": [{ "name": "id", "type": "AMAZON.NUMBER" }],
+          "samples": ["disable rule {id}", "rule {id} band karo"]
+        },
+        {
+          "name": "DeleteRulesIntent",
+          "slots": [],
+          "samples": ["delete all custom rules", "saari rules delete karo", "rules saaf karo"]
+        },
+        {
+          "name": "HeadlightIntent",
+          "slots": [{ "name": "state", "type": "ONOFF_TYPE" }],
+          "samples": ["headlight {state} karo", "headlights {state}"]
+        },
+        {
+          "name": "HazardIntent",
+          "slots": [{ "name": "state", "type": "ONOFF_TYPE" }],
+          "samples": ["hazard {state} karo", "hazards {state}"]
+        },
+        {
+          "name": "RoofColorIntent",
+          "slots": [{ "name": "color", "type": "COLOR_TYPE" }],
+          "samples": ["set roof light to {color}", "roof {color} karo", "roof light {color}"]
+        },
+        {
+          "name": "RoofModeIntent",
+          "slots": [{ "name": "mode", "type": "ROOFMODE_TYPE" }],
+          "samples": ["set roof light to {mode} mode", "roof {mode} mode karo"]
+        },
+        {
+          "name": "RoofBrightnessIntent",
+          "slots": [{ "name": "pct", "type": "AMAZON.NUMBER" }],
+          "samples": ["set roof brightness to {pct} percent", "roof brightness {pct} karo"]
+        },
+        {
+          "name": "AllLightsOffIntent",
+          "slots": [],
+          "samples": ["turn all car lights off", "saari lights band karo", "lights off karo"]
+        },
+        {
+          "name": "WarnLightsIntent",
+          "slots": [],
+          "samples": ["activate car warning lights", "warning lights jalao"]
+        },
+        {
+          "name": "FreeCommandIntent",
+          "slots": [{ "name": "query", "type": "AMAZON.SearchQuery" }],
+          "samples": [
+            "do {query}", "execute {query}", "try {query}",
+            "command {query}", "run {query}"
+          ]
+        }
+      ],
+      "types": [
+        {
+          "name": "SIDE_TYPE",
+          "values": [
+            { "name": { "value": "front" } },
+            { "name": { "value": "left" } },
+            { "name": { "value": "right" } }
+          ]
+        },
+        {
+          "name": "SCREEN_TYPE",
+          "values": [
+            { "name": { "value": "motion radar" } },
+            { "name": { "value": "diagnostics" } },
+            { "name": { "value": "drive dashboard" } },
+            { "name": { "value": "games hub" } },
+            { "name": { "value": "voice history" } },
+            { "name": { "value": "settings" } }
+          ]
+        },
+        {
+          "name": "PROFILE_TYPE",
+          "values": [
+            { "name": { "value": "safe drive" } },
+            { "name": { "value": "night drive" } },
+            { "name": { "value": "park mode" } },
+            { "name": { "value": "demo mode" } },
+            { "name": { "value": "performance mode" } },
+            { "name": { "value": "silent mode" } },
+            { "name": { "value": "game mode" } }
+          ]
+        },
+        {
+          "name": "THEME_TYPE",
+          "values": [
+            { "name": { "value": "night" } },
+            { "name": { "value": "day" } }
+          ]
+        },
+        {
+          "name": "ONOFF_TYPE",
+          "values": [
+            { "name": { "value": "on" } },
+            { "name": { "value": "off" } }
+          ]
+        },
+        {
+          "name": "COLOR_TYPE",
+          "values": [
+            { "name": { "value": "red" } },
+            { "name": { "value": "green" } },
+            { "name": { "value": "yellow" } },
+            { "name": { "value": "magenta" } },
+            { "name": { "value": "white" } },
+            { "name": { "value": "cyan" } },
+            { "name": { "value": "blue" } }
+          ]
+        },
+        {
+          "name": "ROOFMODE_TYPE",
+          "values": [
+            { "name": { "value": "steady" } },
+            { "name": { "value": "breathing" } },
+            { "name": { "value": "rainbow" } },
+            { "name": { "value": "police" } },
+            { "name": { "value": "warning" } },
+            { "name": { "value": "speed" } }
+          ]
+        }
+      ]
+    },
+    "dialog": { "intents": [] },
+    "prompts": []
+  }
+}

@@ -1,0 +1,5 @@
+key,type,encoding,value
+alexa.namespace,namespace,,
+broker,data,string,mqtts://a2n0b2oir0907t-ats.iot.ap-south-1.amazonaws.com:8883
+user,data,string,default
+thing,data,string,azam-car

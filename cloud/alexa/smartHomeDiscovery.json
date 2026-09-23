@@ -1,0 +1,230 @@
+{
+  "event": {
+    "header": {
+      "namespace": "Alexa.Discovery",
+      "name": "Discover.Response",
+      "payloadVersion": "3",
+      "messageId": "discover-response"
+    },
+    "payload": {
+      "endpoints": [
+        {
+          "endpointId": "azam-car-headlights",
+          "friendlyName": "car headlights",
+          "description": "Azam Car headlights",
+          "manufacturerName": "Azam",
+          "displayCategories": ["LIGHT"],
+          "capabilities": [
+            {
+              "type": "AlexaInterface",
+              "interface": "Alexa.PowerController",
+              "version": "3",
+              "properties": {
+                "supported": [{ "name": "powerState" }],
+                "proactivelyReported": true,
+                "retrievable": true
+              }
+            },
+            {
+              "type": "AlexaInterface",
+              "interface": "Alexa.EndpointHealth",
+              "version": "3",
+              "properties": {
+                "supported": [{ "name": "connectivity" }],
+                "proactivelyReported": true,
+                "retrievable": true
+              }
+            },
+            { "type": "AlexaInterface", "interface": "Alexa", "version": "3" }
+          ]
+        },
+        {
+          "endpointId": "azam-car-rearlight",
+          "friendlyName": "car rear light",
+          "description": "Azam Car rear light",
+          "manufacturerName": "Azam",
+          "displayCategories": ["LIGHT"],
+          "capabilities": [
+            {
+              "type": "AlexaInterface",
+              "interface": "Alexa.PowerController",
+              "version": "3",
+              "properties": {
+                "supported": [{ "name": "powerState" }],
+                "proactivelyReported": true,
+                "retrievable": true
+              }
+            },
+            {
+              "type": "AlexaInterface",
+              "interface": "Alexa.EndpointHealth",
+              "version": "3",
+              "properties": {
+                "supported": [{ "name": "connectivity" }],
+                "proactivelyReported": true,
+                "retrievable": true
+              }
+            },
+            { "type": "AlexaInterface", "interface": "Alexa", "version": "3" }
+          ]
+        },
+        {
+          "endpointId": "azam-car-hazards",
+          "friendlyName": "car hazards",
+          "description": "Azam Car hazard lights",
+          "manufacturerName": "Azam",
+          "displayCategories": ["LIGHT"],
+          "capabilities": [
+            {
+              "type": "AlexaInterface",
+              "interface": "Alexa.PowerController",
+              "version": "3",
+              "properties": {
+                "supported": [{ "name": "powerState" }],
+                "proactivelyReported": true,
+                "retrievable": true
+              }
+            },
+            { "type": "AlexaInterface", "interface": "Alexa", "version": "3" }
+          ]
+        },
+        {
+          "endpointId": "azam-car-warning",
+          "friendlyName": "car warning lights",
+          "description": "Azam Car 3-second warning burst",
+          "manufacturerName": "Azam",
+          "displayCategories": ["LIGHT"],
+          "capabilities": [
+            {
+              "type": "AlexaInterface",
+              "interface": "Alexa.PowerController",
+              "version": "3",
+              "properties": {
+                "supported": [{ "name": "powerState" }],
+                "proactivelyReported": false,
+                "retrievable": false
+              }
+            },
+            { "type": "AlexaInterface", "interface": "Alexa", "version": "3" }
+          ]
+        },
+        {
+          "endpointId": "azam-car-rooflight",
+          "friendlyName": "car roof light",
+          "description": "Azam Car roof light",
+          "manufacturerName": "Azam",
+          "displayCategories": ["LIGHT"],
+          "capabilities": [
+            {
+              "type": "AlexaInterface",
+              "interface": "Alexa.PowerController",
+              "version": "3",
+              "properties": {
+                "supported": [{ "name": "powerState" }],
+                "proactivelyReported": true,
+                "retrievable": true
+              }
+            },
+            {
+              "type": "AlexaInterface",
+              "interface": "Alexa.BrightnessController",
+              "version": "3",
+              "properties": {
+                "supported": [{ "name": "brightness" }],
+                "proactivelyReported": true,
+                "retrievable": true
+              }
+            },
+            {
+              "type": "AlexaInterface",
+              "interface": "Alexa.ColorController",
+              "version": "3",
+              "properties": {
+                "supported": [{ "name": "color" }],
+                "proactivelyReported": true,
+                "retrievable": true
+              }
+            },
+            {
+              "type": "AlexaInterface",
+              "interface": "Alexa.ModeController",
+              "instance": "roof.mode",
+              "version": "3",
+              "properties": {
+                "supported": [{ "name": "mode" }],
+                "proactivelyReported": true,
+                "retrievable": true
+              },
+              "configuration": {
+                "ordered": false,
+                "supportedModes": [
+                  { "value": "steady" },
+                  { "value": "breathing" },
+                  { "value": "rainbow" },
+                  { "value": "police" },
+                  { "value": "warning" },
+                  { "value": "speed" }
+                ]
+              }
+            },
+            { "type": "AlexaInterface", "interface": "Alexa", "version": "3" }
+          ]
+        },
+        {
+          "endpointId": "azam-car-alllights",
+          "friendlyName": "all car lights",
+          "description": "Azam Car dark mode (all lights off)",
+          "manufacturerName": "Azam",
+          "displayCategories": ["LIGHT"],
+          "capabilities": [
+            {
+              "type": "AlexaInterface",
+              "interface": "Alexa.PowerController",
+              "version": "3",
+              "properties": {
+                "supported": [{ "name": "powerState" }],
+                "proactivelyReported": false,
+                "retrievable": false
+              }
+            },
+            { "type": "AlexaInterface", "interface": "Alexa", "version": "3" }
+          ]
+        },
+        {
+          "endpointId": "azam-car-profile",
+          "friendlyName": "car drive profile",
+          "description": "Azam Car drive profile",
+          "manufacturerName": "Azam",
+          "displayCategories": ["OTHER"],
+          "capabilities": [
+            {
+              "type": "AlexaInterface",
+              "interface": "Alexa.ModeController",
+              "instance": "car.profile",
+              "version": "3",
+              "properties": {
+                "supported": [{ "name": "mode" }],
+                "proactivelyReported": true,
+                "retrievable": true
+              },
+              "capabilityResources": {},
+              "configuration": {
+                "ordered": false,
+                "supportedModes": [
+                  { "value": "park" },
+                  { "value": "safe" },
+                  { "value": "night" },
+                  { "value": "demo" },
+                  { "value": "performance" },
+                  { "value": "silent" },
+                  { "value": "game" }
+                ]
+              }
+            },
+            { "type": "AlexaInterface", "interface": "Alexa", "version": "3" }
+          ]
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,37 @@
+# ESP-IDF build outputs - kabhi commit nahi karna
+build/
+**/build/
+.cache/
+managed_components/
+dependencies.lock.tmp
+sdkconfig.old
+sdkconfig.bak
+*.bin
+*.elf
+*.map
+
+# Root debug/build logs (*.txt) - purani log files
+/*.txt
+**/backlight_uses.txt
+**/engspd.txt
+
+# Node (Alexa lambda) - heavy + regeneratable
+**/node_modules/
+cloud/alexa/function.zip
+
+# Secrets - private keys GitHub par kabhi nahi
+cloud/alexa/private_key.pem
+cloud/alexa/device_cert.pem
+cloud/alexa/nvs_pems.csv
+cloud/alexa/nvs_certs_only.csv
+cloud/alexa/*.bin
+*.pem.key
+*.private.*
+
+# Python / OS / IDE
+__pycache__/
+*.pyc
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/

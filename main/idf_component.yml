@@ -1,0 +1,7 @@
+## IDF Component Manager Manifest
+dependencies:
+  idf: ">=6.0"
+  espressif/usb: "^1.0.0"
+  espressif/led_strip: "^2.0.0"
+  espressif/mqtt: "^1.0.0"
+  espressif/cjson: "^1.0.0"

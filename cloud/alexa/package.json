@@ -1,0 +1,13 @@
+{
+  "name": "azam-car-alexa",
+  "version": "1.0.0",
+  "description": "Alexa Custom + Smart Home backend for Azam Car (AWS Lambda)",
+  "main": "lambda_index.js",
+  "scripts": {
+    "zip": "npm install --omit=dev && zip -r function.zip lambda_index.js lambda_event.js node_modules package.json"
+  },
+  "dependencies": {
+    "ask-sdk-core": "^2.14.0",
+    "@aws-sdk/client-iot-data-plane": "^3.0.0"
+  }
+}
