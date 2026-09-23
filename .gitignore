@@ -28,6 +28,10 @@ cloud/alexa/*.bin
 *.pem.key
 *.private.*
 
+# Release staging (uploaded to GitHub Releases, not git)
+release/
+firmware-*.zip
+
 # Python / OS / IDE
 __pycache__/
 *.pyc
